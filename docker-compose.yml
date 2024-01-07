@@ -16,5 +16,4 @@ services:
     volumes:
       - ./data:/config
     restart: unless-stopped
-    dns:
-      - 8.8.8.8
+    network_mode: "bridge"
